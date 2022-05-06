@@ -1,0 +1,23 @@
+<div>
+    <h1 style="margin-left: 20px;">List of Employees :</h1>
+    <div *ngFor="let item of employees; let i=index">
+  <table style="font-size: 25px; border-width:  2px;">
+      
+   <tr>
+       <td>{{i+1}}</td>
+       <td>{{item.name}}</td>
+       <td>{{item.age}}</td>
+       <td>{{item.department}}</td>
+       <td>{{item.refferedby}}</td>
+
+   </tr>
+  </table>
+
+      <!---- <table style="font-size: 25px; margin-left: 30px;border: 2px;">{{i+1}}&nbsp;&nbsp;&nbsp;&nbsp;
+        {{item.name}}&nbsp;&nbsp;&nbsp;&nbsp;{{item.age}}
+        &nbsp;&nbsp;&nbsp;&nbsp;{{item.department}}&nbsp;&nbsp;&nbsp;&nbsp;{{item.refferedby}}</table>-->
+        
+    </div>
+</div>
+
+  
